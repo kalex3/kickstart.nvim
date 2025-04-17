@@ -256,7 +256,7 @@ require('lazy').setup({
     -- VimTeX configuration goes here, e.g.
       vim.g.vimtex_view_method = "zathura"
     end
-  }
+  },
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
