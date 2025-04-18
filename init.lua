@@ -249,14 +249,13 @@ require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'github/copilot.vim',
-  'xiyaowong/transparent.nvim',
   {
-    "lervag/vimtex",
-    lazy = false,     -- we don't want to lazy load VimTeX
+    'lervag/vimtex',
+    lazy = false, -- we don't want to lazy load VimTeX
     init = function()
-    -- VimTeX configuration goes here, e.g.
-      vim.g.vimtex_view_method = "zathura"
-    end
+      -- VimTeX configuration goes here, e.g.
+      vim.g.vimtex_view_method = 'zathura'
+    end,
   },
 
   -- NOTE: Plugins can also be added by using a table,
@@ -896,8 +895,11 @@ require('lazy').setup({
     config = function()
       ---@diagnostic disable-next-line: missing-fields
       require('tokyonight').setup {
+        transparent = true,
         styles = {
           comments = { italic = false }, -- Disable italics in comments
+          sidebars = transparent,
+          floats = transparent,
         },
       }
 
