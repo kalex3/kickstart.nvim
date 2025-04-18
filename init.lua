@@ -249,7 +249,7 @@ require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'github/copilot.vim',
-  'xiyaowong/transparent.nvim'
+  'xiyaowong/transparent.nvim',
   {
     "lervag/vimtex",
     lazy = false,     -- we don't want to lazy load VimTeX
