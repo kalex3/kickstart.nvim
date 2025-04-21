@@ -75,11 +75,6 @@ vim.opt.scrolloff = 10
 -- See `:help 'confirm'`
 vim.opt.confirm = true
 
--- tabs
--- vim.opt.tabstop = 4
--- vim.opt.softtabstop = 4
--- vim.opt.shiftwidth = 4
-
 -- wordwrap
 vim.opt.linebreak = true
 
