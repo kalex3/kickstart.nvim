@@ -95,6 +95,8 @@ vim.keymap.set('n', '<leader>m', ':Mason<CR>', { desc = 'Open [M]ason' })
 vim.keymap.set('n', '<leader>tl', ':set cursorline!<CR>', { desc = '[T]oggle cursor[L]ine' })
 -- Toggle linewrap
 vim.keymap.set('n', '<leader>tw', ':set wrap!<CR>', { desc = '[T]oggle line[W]rap' })
+-- VimBeGood
+vim.keymap.set('n', '<leader>v', ':VimBeGood<CR>', { desc = 'VimBeGood' })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
@@ -173,7 +175,8 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
-  'ThePrimeagen/vim-be-good', -- get better at vim motions
+  'ThePrimeagen/vim-be-good', -- Get better at vim motions
+  'github/copilot.vim', -- Copilot
 
   {
     'lervag/vimtex',
