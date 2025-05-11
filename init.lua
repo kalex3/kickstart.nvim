@@ -185,7 +185,8 @@ require('lazy').setup({
       -- VimTeX configuration goes here, e.g.
       vim.g.vimtex_view_method = 'zathura'
       vim.g.vimtex_syntax_enabled = 0
-      vim.g.vimtex_quickfix_autoclose_after_keystrokes = 1
+      -- vim.g.vimtex_quickfix_autoclose_after_keystrokes = 1
+      vim.g.vimtex_quickfix_enabled = 0
     end,
   },
 
@@ -369,9 +370,6 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
       vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
       vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
-      vim.keymap.set('n', '<leader>sa', function()
-        builtin.find_files { hidden = true }
-      end, { desc = '[S]earch [A]ll files' })
       vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
       vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
       vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
