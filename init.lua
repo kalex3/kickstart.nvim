@@ -174,7 +174,7 @@ vim.opt.rtp:prepend(lazypath)
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
-  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
   'ThePrimeagen/vim-be-good', -- Get better at vim motions
   'github/copilot.vim', -- Copilot
 
