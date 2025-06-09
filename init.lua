@@ -185,6 +185,15 @@ require('lazy').setup({
   'ThePrimeagen/vim-be-good', -- Get better at vim motions
 
   {
+    'akinsho/bufferline.nvim',
+    version = '*',
+    dependencies = 'nvim-tree/nvim-web-devicons',
+    config = function()
+      require('bufferline').setup {}
+    end,
+  },
+
+  {
     'zbirenbaum/copilot.lua',
     cmd = 'Copilot',
     event = 'InsertEnter',
